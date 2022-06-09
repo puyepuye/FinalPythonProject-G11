@@ -1,5 +1,5 @@
 # Simple Snake Game in Python 3 for Beginners
-# By @TokyoEdTech
+# By BLP
 
 import turtle
 import time
@@ -13,10 +13,23 @@ d = 0
 score = 0
 high_score = 0
 
+# Snake Enemy
+
+enemy = turtle.Turtle()
+
+enemy.speed(0)
+
+enemy.shape("turtle")
+
+enemy.color("purple")
+
+enemy.penup()
+
+enemy.goto(0, 100)
 # Set up the screen
 wn = turtle.Screen()
 t = turtle.Turtle()
-wn.title("Snake Game by @TokyoEdTech")
+wn.title("Snake Game by BLP")
 turtle.bgpic("Untitled_Artwork.png")
 wn.setup(width=640, height=640)
 wn.tracer(0) # Turns off the screen updates
@@ -195,7 +208,28 @@ while True:
         segments[0].goto(x,y)
 
     move()    
-
+    x = random.randint(-290, 290)
+    y = random.randint(-290, 290)
+    enemy.goto(x, y)
+    if head.distance(enemy) < 20:
+        # Move the food to a random spot
+        time.sleep(1)
+        head.goto(0, 0)
+        head.direction = "stop"
+        # Dissapear
+        enemy.goto(1000, 1000)
+        # Clear the segments list
+        segments.clear()
+        # Reset the score
+        score = 0
+        # Reset the delay
+        delay = 0.1
+        pen.clear()
+        pen.write(
+            "BABIES: {}  BABIES COLLECTED: {}".format(score, high_score),
+            align="center",
+            font=("Courier", 24, "normal"),
+        )
     # Check for head collision with the body segments
     for segment in segments:
         if segment.distance(head) < 20:
