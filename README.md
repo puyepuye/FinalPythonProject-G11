@@ -13,3 +13,7 @@ June 6th
 Puye - Make a cover page for the game.
 Lily - Art work for background and new characters in the game. 
 Beam - Connect to Github.
+
+June 9th Project Presentation
+Main File: Snake.py
+Background Image: BG.png
