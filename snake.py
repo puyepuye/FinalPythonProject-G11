@@ -4,8 +4,11 @@
 import turtle
 import time
 import random
+import time
 
 delay = 0.1
+global d
+d = 0
 # Score
 score = 0
 high_score = 0
@@ -14,7 +17,7 @@ high_score = 0
 wn = turtle.Screen()
 t = turtle.Turtle()
 wn.title("Snake Game by @TokyoEdTech")
-turtle.bgpic("Bg.png")
+turtle.bgpic("Untitled_Artwork.png")
 wn.setup(width=640, height=640)
 wn.tracer(0) # Turns off the screen updates
 t.penup()
@@ -36,6 +39,8 @@ t.left(90) # Turn turtle by 90 degree
 t.forward(640) # Forward turtle by s units
 t.left(90) # Turn turtle by 90 degree
 t.hideturtle()
+
+
 
 # Snake head
 head = turtle.Turtle()
@@ -65,6 +70,7 @@ pen.penup()
 pen.hideturtle()
 pen.goto(0, 260)
 pen.write("BABIES: 0  BABIES COLLECTED: 0", align="center", font=("Courier", 24, "normal"))
+
 
 # Functions
 def go_up():
@@ -136,10 +142,15 @@ while True:
 
         # Reset the delay
         delay = 0.1
-
         pen.clear()
-        pen.write("BABIES: {}  BABIES COLLECTED: {}".format(score, high_score), align="center", font=("Courier", 24, "normal")) 
-
+        pen.goto(0, 0)
+        pen.write("Game Over", font=("Courier", 50
+                                     , "normal"), align='center')
+        time.sleep(2)
+        pen.clear()
+        pen.goto(0, 260)
+        pen.write("BABIES: 0  BABIES COLLECTED: 0", align="center", font=("Courier", 24, "normal"))
+        
 
     # Check for a collision with the food
     if head.distance(food) < 20:
@@ -163,7 +174,7 @@ while True:
         delay -= 0.001
 
         # Increase the score
-        score += 10
+        score += 1
 
         if score > high_score:
             high_score = score
@@ -191,6 +202,7 @@ while True:
             time.sleep(1)
             head.goto(0,0)
             head.direction = "stop"
+            
         
             # Hide the segments
             for segment in segments:
@@ -201,13 +213,22 @@ while True:
 
             # Reset the score
             score = 0
-
+            t.pendown()
+            style = ('Courier', 30, 'bold')
+            turtle.write("Game Over", font=style, align='center')
+            t.penup()
+            time.sleep(20)
+            pen.clear()
+            
             # Reset the delay
             delay = 0.1
         
             # Update the score display
             pen.clear()
-            pen.write("BABIES: {}  BABIES COLLECTED: {}".format(score, high_score), align="center", font=("Courier", 24, "normal"))
+            style = ('Courier', 15, 'bold')
+            pen.color('cyan')
+            #pen.write("Game Over", font='Courier', 15, 'bold', align='center')
+            pen.write("BABIES: {}  BABIES COLLECTED: {}".format(score, high_score), align="center", font=("Courier", 15, "normal"))
 
     time.sleep(delay)
 
