@@ -18,8 +18,14 @@ Puye          | Second coder, with unlimited knowledge on GitHub and suggestions
 * 1-June 
 	* we can create a better avatar and graphical interface / draw some png instead of the red dots and black squares for the snake / make it look a bit better we can create more variations for points / or add in further challenges like add a bomb that will decrease the points if the snake touches it we can create a game over screen and a start screen as well to make it a bit clearer we can add an option for personal best
             
-June 3: Did our code, changed the background. Changed the game into Turtle catch Turtle. Did most of the coding corrections here. Figure out how to turn turtle’s head and add “Game over”
+* June 3
+	*  Did our code, changed the background. Changed the game into Turtle catch Turtle. Did most of the coding corrections here. Figure out how to turn turtle’s head and add “Game over”
            
-June 6th: Puye - Make a cover page for the game. Lily - Art work for background and new characters in the game. Beam - Connect to Github. Mostly figure out how to share the code.
+* June 6th
+	* Puye - Make a cover page for the game. Lily - Art work for background and new characters in the game. Beam - Connect to Github. Mostly figure out how to share the code.
 	
-June 9th: Project Presentation Main File: Snake.py Background Image: Untitled_artwork.png
+* June 9th
+	* Project Presentation Main File: Snake.py Background Image: Untitled_artwork.png
+
+## Presentation 🎁🎤
+Canva Link: https://www.canva.com/design/DAFDF9uDQB8/Do6YQm0fXwNsFusicVc8dg/view?utm_content=DAFDF9uDQB8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
