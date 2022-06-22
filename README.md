@@ -1,8 +1,8 @@
-Project Background:
+#Project Background:
 
 Our project basically derived from the snake.io game, which is an easy web game. The main goal of the original game is to collect the most points and not crash into the border of the web, or else the game will be over. Our team used this original code and added more functions and spicers to its boring design, for instance, the background and icons changed from normal geometrical shape into turtles by using turtle library form Python. The aim is to create a grid line, so users can get the idea of where the perimeter of the game is. Moving on to the coding part, we added lines that take care of the direction that the turtle’s head will face after making turns. With extra spices on the counted score and displays of background, to give a more realistic vibe. On top of that, after the game ends, we add more code to display “Game over” to let the user know that they’ve lost. 
 
-Work Division:
+##Work Division:
 
 Beam- main coder of our team, helps with most of the coding part.
 Puye - Second coder, with unlimited knowledge on GitHub and suggestions on the code. 
