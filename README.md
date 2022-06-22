@@ -10,7 +10,19 @@ Beam          | Lead coder of our team, helps with most of the coding part.
 Lily          | Help with the design and idea of the game, help beam with pushing code and pull requests on GitHub. 
 Puye          | Second coder, with unlimited knowledge on GitHub and suggestions on the code. 
 
+## Timeline ⏳
 
+ Markup : * Bullet list
+              * Nested bullet
+                  * Sub-nested bullet etc
+          * Bullet list item 2
+
+-OR-
+
+ Markup : - Bullet list
+              - Nested bullet
+                  - Sub-nested bullet etc
+          - Bullet list item 2 
 30-May Still in the progress of figuring out what to do.
 
 1-June we can create a better avatar and graphical interface / draw some png instead of the red dots and black squares for the snake / make it look a bit better we can create more variations for points / or add in further challenges like add a bomb that will decrease the points if the snake touches it we can create a game over screen and a start screen as well to make it a bit clearer we can add an option for personal best
